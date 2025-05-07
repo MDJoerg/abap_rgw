@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_ACF_RGW_RestActions'
+define service ZUI_ACF_RGW_RESTACTIONS {
+  expose ZI_ACF_RGW_RESTACTIONS as RESTActions;
+  expose ZI_ACF_RGW_RESTACTIONSTP as RESTAction;
+}
