@@ -1,5 +1,0 @@
-@MappingRole: true
-define role ZI_ACF_RGW_RESTACTIONS_S {
-  grant select on ZI_ACF_RGW_RestActions_S
-  where ( ) = ASPECT pfcg_auth ( 'S_TABU_NAM', ACTVT = '03', TABLE = 'ZI_ACF_RGW_RESTACTIONSTP' );
-}
