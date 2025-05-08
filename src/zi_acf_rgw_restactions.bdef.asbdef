@@ -41,7 +41,7 @@ authorization master( global )
   }
   }
 
-define behavior for ZI_ACF_RGW_RestActionsTP alias RESTAction ##UNMAPPED_FIELD
+define behavior for ZI_ACF_RGW_RestActions_S alias RESTAction ##UNMAPPED_FIELD
 persistent table ZACF_RGWCFR
 draft table ZACF_RGWCFR_D
 etag master LocalLastChangedAt

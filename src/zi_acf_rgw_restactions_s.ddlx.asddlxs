@@ -10,7 +10,7 @@
     }
   }
 }
-annotate view ZI_ACF_RGW_RestActionsTP with
+annotate view ZI_ACF_RGW_RESTACTIONS_S with
 {
   @UI.identification: [ {
     position: 1 

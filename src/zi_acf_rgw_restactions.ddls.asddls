@@ -8,9 +8,9 @@
 }
 define root view entity ZI_ACF_RGW_RestActions
   as select from I_Language
-    left outer join ZACF_RGWCFR on 0 = 0
+    left outer join zacf_rgwcfr on 0 = 0
   association [0..*] to I_ABAPTransportRequestText as _ABAPTransportRequestText on $projection.TransportRequestID = _ABAPTransportRequestText.TransportRequestID
-  composition [0..*] of ZI_ACF_RGW_RestActionsTP as _RESTAction
+  composition [0..*] of ZI_ACF_RGW_RESTACTIONS_S as _RESTAction
 {
   @UI.facet: [ {
     id: 'ZI_ACF_RGW_RestActionsTP', 
@@ -26,7 +26,7 @@ define root view entity ZI_ACF_RGW_RestActions
   key 1 as SingletonID,
   _RESTAction,
   @UI.hidden: true
-  max( ZACF_RGWCFR.LAST_CHANGED_AT ) as LastChangedAtMax,
+  max( zacf_rgwcfr.last_changed_at ) as LastChangedAtMax,
   @ObjectModel.text.association: '_ABAPTransportRequestText'
   @UI.identification: [ {
     position: 2 , 
@@ -34,7 +34,7 @@ define root view entity ZI_ACF_RGW_RestActions
     semanticObjectAction: 'manage'
   } ]
   @Consumption.semanticObject: 'CustomizingTransport'
-  cast( '' as SXCO_TRANSPORT) as TransportRequestID,
+  cast( '' as sxco_transport) as TransportRequestID,
   _ABAPTransportRequestText
   
 }

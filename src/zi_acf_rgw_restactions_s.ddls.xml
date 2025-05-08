@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DDLS>
-    <DDLNAME>ZI_ACF_RGW_RESTACTIONSTP</DDLNAME>
+    <DDLNAME>ZI_ACF_RGW_RESTACTIONS_S</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
-    <DDTEXT>REST Action</DDTEXT>
+    <DDTEXT>REST Action Singleton</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>
