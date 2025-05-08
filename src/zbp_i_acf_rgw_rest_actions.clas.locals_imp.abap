@@ -80,6 +80,9 @@ CLASS LHC_ZI_ACF_RGW_RESTACTIONS IMPLEMENTATION.
     AUTHORITY-CHECK OBJECT 'S_TABU_NAM' ID 'TABLE' FIELD 'ZI_ACF_RGW_RESTACTIONSTP' ID 'ACTVT' FIELD '02'.
     DATA(is_authorized) = COND #( WHEN sy-subrc = 0 THEN if_abap_behv=>auth-allowed
                                   ELSE if_abap_behv=>auth-unauthorized ).
+    " workaround for the issue with the authorization check
+    IS_AUTHORIZED = if_abap_behv=>auth-allowed.
+
     result-%UPDATE      = is_authorized.
     result-%ACTION-Edit = is_authorized.
     result-%ACTION-SelectCustomizingTransptReq = is_authorized.
