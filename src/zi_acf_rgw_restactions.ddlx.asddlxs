@@ -1,0 +1,259 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'RESTActions', 
+    typeNamePlural: 'RESTActionss', 
+    title: {
+      type: #STANDARD, 
+      label: 'REST Actions Configuration', 
+      value: 'App'
+    }
+  }
+}
+annotate view ZI_ACF_RGW_RestActions with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'CopyRESTActions', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_ACF_RGW_RestActions', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'REST Actions Configuration', 
+    position: 1 
+  } ]
+  App;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  ActionKey;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  IsActive;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'Description'
+  } ]
+  Description;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'Version'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'Version'
+  } ]
+  Version;
+  
+  @UI.identification: [ {
+    position: 6 , 
+    label: 'Tags'
+  } ]
+  @UI.lineItem: [ {
+    position: 6 , 
+    label: 'Tags'
+  } ]
+  Tags;
+  
+  @UI.identification: [ {
+    position: 7 , 
+    label: 'Responsible'
+  } ]
+  @UI.lineItem: [ {
+    position: 7 , 
+    label: 'Responsible'
+  } ]
+  Responsible;
+  
+  @UI.identification: [ {
+    position: 8 , 
+    label: 'ReferenceInfo'
+  } ]
+  @UI.lineItem: [ {
+    position: 8 , 
+    label: 'ReferenceInfo'
+  } ]
+  ReferenceInfo;
+  
+  @UI.identification: [ {
+    position: 9 , 
+    label: 'CcCategory'
+  } ]
+  @UI.lineItem: [ {
+    position: 9 , 
+    label: 'CcCategory'
+  } ]
+  CcCategory;
+  
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ActionCategory'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ActionCategory'
+  } ]
+  ActionCategory;
+  
+  @UI.identification: [ {
+    position: 11 , 
+    label: 'ActionType'
+  } ]
+  ActionType;
+  
+  @UI.identification: [ {
+    position: 12 , 
+    label: 'ActionHandler'
+  } ]
+  ActionHandler;
+  
+  @UI.identification: [ {
+    position: 13 , 
+    label: 'ActionUrl'
+  } ]
+  ActionUrl;
+  
+  @UI.identification: [ {
+    position: 14 , 
+    label: 'ActionDestination'
+  } ]
+  ActionDestination;
+  
+  @UI.identification: [ {
+    position: 15 , 
+    label: 'ActionForwardApp'
+  } ]
+  ActionForwardApp;
+  
+  @UI.identification: [ {
+    position: 16 , 
+    label: 'ActionForwardKey'
+  } ]
+  ActionForwardKey;
+  
+  @UI.identification: [ {
+    position: 17 , 
+    label: 'ActionConfig'
+  } ]
+  ActionConfig;
+  
+  @UI.identification: [ {
+    position: 18 , 
+    label: 'RequestContentType'
+  } ]
+  RequestContentType;
+  
+  @UI.identification: [ {
+    position: 19 , 
+    label: 'RequestTemplateDdic'
+  } ]
+  RequestTemplateDdic;
+  
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'RequestTemplateRaw'
+  } ]
+  RequestTemplateRaw;
+  
+  @UI.identification: [ {
+    position: 21 , 
+    label: 'RequestTemplateJson'
+  } ]
+  RequestTemplateJson;
+  
+  @UI.identification: [ {
+    position: 22 , 
+    label: 'ResponseContentType'
+  } ]
+  ResponseContentType;
+  
+  @UI.identification: [ {
+    position: 23 , 
+    label: 'ResponseTemplateDdic'
+  } ]
+  ResponseTemplateDdic;
+  
+  @UI.identification: [ {
+    position: 24 , 
+    label: 'ResponseTemplateRaw'
+  } ]
+  ResponseTemplateRaw;
+  
+  @UI.identification: [ {
+    position: 25 , 
+    label: 'ErrorDefaultStatus'
+  } ]
+  ErrorDefaultStatus;
+  
+  @UI.identification: [ {
+    position: 26 , 
+    label: 'ErrorDefaultMessage'
+  } ]
+  ErrorDefaultMessage;
+  
+  @UI.identification: [ {
+    position: 27 , 
+    label: 'ErrorDefaultReason'
+  } ]
+  ErrorDefaultReason;
+  
+  @UI.identification: [ {
+    position: 28 , 
+    label: 'ParameterInfo'
+  } ]
+  ParameterInfo;
+  
+  @UI.identification: [ {
+    position: 29 , 
+    label: 'Parameter1'
+  } ]
+  Parameter1;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Parameter2'
+  } ]
+  Parameter2;
+  
+  @UI.identification: [ {
+    position: 31 , 
+    label: 'Parameter3'
+  } ]
+  Parameter3;
+  
+  @UI.identification: [ {
+    position: 32 , 
+    label: 'Parameter4'
+  } ]
+  Parameter4;
+  
+  @UI.identification: [ {
+    position: 33 , 
+    label: 'Parameter5'
+  } ]
+  Parameter5;
+}
